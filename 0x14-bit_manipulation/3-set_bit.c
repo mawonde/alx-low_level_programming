@@ -1,5 +1,5 @@
 i#include "main.h"
-i
+
 /**
  * set_bit - sets the bit value  to 1 at a given index.
  * @n: pointer of the unsigned long int.
@@ -14,7 +14,8 @@ int set_bit(unsigned long int *n, unsigned int index)
 	if (index > 63)
 		return (-1);
 
-	*n = ((1 << index) | *n);
+	o = 1 << index;
+	*n = ( *n| o);
 
 	return (1);
 }
