@@ -9,7 +9,7 @@ i#include "main.h"
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int m;
+	unsigned int o;
 
 	if (index > 63)
 		return (-1);
